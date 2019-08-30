@@ -1,0 +1,5 @@
+*.pdf
+MNIST_data
+mnist
+*.TMP
+generated_output/*

@@ -55,7 +55,7 @@ for epoch in range(15):
     total_cost = 0
 
     for i in range(total_batch):
-        batch_xs, batch_ys = mnist.train.next_batch(batch_size)
+        batch_xs, _ = mnist.train.next_batch(batch_size)
 
         _,cost_val = sess.run([optimizer,cost],feed_dict={X:batch_xs,Y:batch_ys,keep_prob:0.7})
         total_cost += cost_val
